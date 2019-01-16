@@ -13,3 +13,7 @@ development:
 test:
   <<: *default
   database: erb_test_test
+
+production:
+  <<: *default
+  database: erb_test_production
