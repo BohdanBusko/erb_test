@@ -2,18 +2,22 @@ default: &default
   adapter: postgresql
   encoding: unicode
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  username: <%= ENV['PG_USERNAME'] %>
-  password: <%= ENV['PG_PASSWORD'] %>
   host: localhost
 
 development:
   <<: *default
+  username: <%= ENV['PG_USERNAME'] %>
+  password: <%= ENV['PG_PASSWORD'] %>
   database: erb_test_development
 
 test:
   <<: *default
+  username: <%= ENV['PG_USERNAME'] %>
+  password: <%= ENV['PG_PASSWORD'] %>
   database: erb_test_test
 
 production:
   <<: *default
-  database: erb_test_production
+  database: boiling-falls-90100_production
+  username: boiling-falls-90100
+  password: <%= ENV['boiling-falls-90100_DATABASE_PASSWORD'] %>
