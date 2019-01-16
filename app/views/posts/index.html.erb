@@ -1,0 +1,23 @@
+<%= render 'shared/main_post', post: @posts.first %>
+
+
+<div class="row mb-2">
+  <% @posts.order('RANDOM()').limit(2).each do |post| %>
+    <%= render 'shared/second_post', post: post %>
+  <% end %>
+</div>
+
+
+<main role="main" class="container">
+  <div class="row">
+    <div class="col-md-8 blog-main">
+      <h3 class="pb-3 mb-4 font-italic border-bottom">
+        From the Firehose
+      </h3>
+      <% @posts.each do |post| %>
+        <%= render 'shared/post', post: post %>
+      <% end %>
+    </div>
+    <%= render 'shared/side_menu' %>
+  </div>
+</main>

@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.5.1'
+ruby '2.6.0'
 
 gem 'rails', '~> 5.2.2'
 gem 'pg', '>= 0.18', '< 2.0'
@@ -32,3 +32,7 @@ group :test do
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem 'bootstrap', '~> 4.2.1'
+gem 'jquery-rails'
+gem 'faker'
