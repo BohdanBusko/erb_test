@@ -18,6 +18,10 @@ test:
 
 production:
   <<: *default
-  database: boiling-falls-90100_production
-  username: boiling-falls-90100
-  password: <%= ENV['boiling-falls-90100_DATABASE_PASSWORD'] %>
+  host: ec2-54-243-228-140.compute-1.amazonaws.com
+  database: d2s55v5h2i6iq4
+  username: veelhmajgbpbgi
+  password: 0c13df90831cbc23b2746c98e3f3516d19b292177c1601950ca4c10dfeecd487
+  port: 5432
+  url: postgres://veelhmajgbpbgi:0c13df90831cbc23b2746c98e3f3516d19b292177c1601950ca4c10dfeecd487@ec2-54-243-228-140.compute-1.amazonaws.com:5432/d2s55v5h2i6iq4
+
