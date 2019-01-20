@@ -1,8 +1,8 @@
-<%= render 'shared/main_post', post: @posts.first %>
+<%= render 'shared/main_post', post: Post.first %>
 
 
 <div class="row mb-2">
-  <% @posts.order('RANDOM()').limit(2).each do |post| %>
+  <% Post.order('RANDOM()').limit(2).each do |post| %>
     <%= render 'shared/second_post', post: post %>
   <% end %>
 </div>
@@ -20,4 +20,6 @@
     </div>
     <%= render 'shared/side_menu' %>
   </div>
+
+  <%= paginate @posts, theme: 'twitter-bootstrap-4' %>
 </main>
