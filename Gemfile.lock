@@ -83,6 +83,8 @@ GEM
     coffee-script-source (1.12.2)
     concurrent-ruby (1.1.4)
     crass (1.0.4)
+    embed_view (0.1.0)
+      rails (>= 5.0.0)
     erubi (1.8.0)
     execjs (2.7.0)
     faker (1.9.1)
@@ -238,6 +240,7 @@ DEPENDENCIES
   capybara (>= 2.15)
   chromedriver-helper
   coffee-rails (~> 4.2)
+  embed_view
   faker
   jbuilder (~> 2.5)
   jquery-rails

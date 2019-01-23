@@ -18,10 +18,10 @@ test:
 
 production:
   <<: *default
-  host: ec2-54-243-228-140.compute-1.amazonaws.com
-  database: d2s55v5h2i6iq4
-  username: veelhmajgbpbgi
-  password: 0c13df90831cbc23b2746c98e3f3516d19b292177c1601950ca4c10dfeecd487
+  host: ec2-54-225-121-235.compute-1.amazonaws.com
+  database: d16t6nk3u99n98
+  username: nhytbbmglssnhy
+  password: 8e17f12ef0a542a619c98293f5f8765d922a65c9f9c6c7052b1a01e3c01b8208
   port: 5432
-  url: postgres://veelhmajgbpbgi:0c13df90831cbc23b2746c98e3f3516d19b292177c1601950ca4c10dfeecd487@ec2-54-243-228-140.compute-1.amazonaws.com:5432/d2s55v5h2i6iq4
+  url: postgres://nhytbbmglssnhy:8e17f12ef0a542a619c98293f5f8765d922a65c9f9c6c7052b1a01e3c01b8208@ec2-54-225-121-235.compute-1.amazonaws.com:5432/d16t6nk3u99n98
 
